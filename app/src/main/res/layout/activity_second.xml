@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background1">
+
+    <TextView
+        android:id="@+id/textPlot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/tickets"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/count"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextCount"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginRight="80dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberSigned"
+            android:hint="0"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:inputType="none"
+            android:hint='@string/click_here'
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <TextView
+            android:id="@+id/texTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:inputType="none"
+            android:gravity="center"
+            android:hint='@string/click_here'
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:layout_marginLeft="25dp"
+            android:editable="false"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+    </GridLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+
+        <TextView
+            android:id="@+id/textSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="@string/price"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/sumPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0₪"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:layout_marginRight="70dp"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/buttonOrderNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/order_now"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="529dp"
+        android:layout_marginTop="20dp"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/buttonHistory"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:enabled="false"
+        android:text="@string/purchases_history"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="529dp" />
+
+</LinearLayout>
